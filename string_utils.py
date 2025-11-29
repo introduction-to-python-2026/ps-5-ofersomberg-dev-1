@@ -5,15 +5,14 @@ def split_before_uppercases(formula):
     if not formula:
         return []
     start = 0
-    end = 1
     split_formula = []
 
-    for ch in formula[1:]:
-        if ch.isupper():
-            split_formula.append(formula[start:end])
-            start = end
-        end += 1
-    split_formula.append(formula[start:end])
+    for i in range(1, len(formula)):
+        if formula[i].isupper():   
+            split_formula.append(formula[start:i])
+            start = i
+
+    split_formula.append(formula[start:])
     return split_formula
 
 def split_at_digit(formula):
