@@ -37,8 +37,8 @@ def count_atoms_in_molecule(molecular_formula):
     Example: 'H2O' → {'H': 2, 'O': 1}"""
 
 
-    for atom in split_by_capitals(molecular_formula):
-        atom_name, atom_count = split_at_number(atom)
+    for atom in split_before_uppercases(molecular_formula):
+        atom_name, atom_count = split_at_digit(atom)
         atom_counts[atom_name] = atom_counts.get(atom_name, 0) + atom_count
     return atom_counts
 
