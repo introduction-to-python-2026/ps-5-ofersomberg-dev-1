@@ -1,6 +1,4 @@
 
-
-
 def split_before_uppercases(formula):
     if not formula:
         return []
