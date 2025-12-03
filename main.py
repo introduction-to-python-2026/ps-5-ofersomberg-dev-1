@@ -1,6 +1,6 @@
 from string_utils import (
     split_by_capitals,
-    split_at_number,
+    split_at_digit,
     count_atoms_in_molecule
 )
 from equation_utils import (
