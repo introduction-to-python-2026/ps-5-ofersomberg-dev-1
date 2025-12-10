@@ -1,5 +1,5 @@
 
-def split_by_capitals(formula):
+def split_before_uppercases(formula):
     if not formula:
         return []
     start = 0
